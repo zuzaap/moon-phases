@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Wybierz algorytm:"
+        android:textSize="25sp"></TextView>
+
+    <RadioGroup
+        android:id="@+id/chosen_algorithm"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/simple_alg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple" />
+
+        <RadioButton
+            android:id="@+id/conoway_alg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conway" />
+
+        <RadioButton
+            android:id="@+id/trig1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trigonometry 1" />
+
+        <RadioButton
+            android:id="@+id/trig2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trigonometry 2" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Półkula"
+        android:textSize="25sp"></TextView>
+
+    <RadioGroup
+        android:id="@+id/chosen_hemisphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50sp">
+        <RadioButton
+            android:id="@+id/N_hemi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"></RadioButton>
+        <RadioButton
+            android:id="@+id/S_hemi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"></RadioButton>
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/save_button"
+        android:text="Zapisz"></Button>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
